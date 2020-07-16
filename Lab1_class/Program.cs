@@ -131,7 +131,8 @@ namespace Lab1_class
             return (CalculateCost(qty, price) + discount); //extendability
         }
 
-        //overrriding: min 2 classes is required (Inheritance) and func definition is same 
+        //overrriding: min 2 classes is required (Inheritance) and func definition is same
+        //Overriding - Dynamic Polymorphism
         public virtual double CalculateProfit(int qty, double cost, double discount, double sell)
         {
             return (qty * sell) - CalculateCost(qty, cost, discount);
@@ -251,7 +252,7 @@ namespace Lab1_class
 
     //Inteface can not have field variables
     //inteface cannot have implemented funtions and methods
-    //all methods in inteface needs to be implemented
+    //all methods in inteface needs to be implemented by child classes
     //interface can be used to implemenet run time interface
     //child class can implement multiple inteface
     //all interface methods are public 
